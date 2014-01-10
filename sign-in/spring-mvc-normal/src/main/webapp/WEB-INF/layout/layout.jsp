@@ -34,11 +34,11 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <sec:authorize access="isAnonymous()">
-                    <li><a href="/user/register"><spring:message code="label.navigation.registration.link"/></a></li>
+                    <li><a href="${pageContext.request.contextPath}/user/register"><spring:message code="label.navigation.registration.link"/></a></li>
                 </sec:authorize>
                 <sec:authorize access="isAuthenticated()">
                     <li>
-                        <form action="/logout" method="POST">
+                        <form action="${pageContext.request.contextPath}/logout" method="POST">
                             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                             <button type="submit" class="btn btn-default navbar-btn">
                                 <spring:message code="label.navigation.logout.link"/>
