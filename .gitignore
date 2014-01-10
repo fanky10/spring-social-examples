@@ -4,3 +4,10 @@ target
 .idea
 .DS_Store
 socialConfig.properties
+
+
+# IDE specific files and folders #
+*.classpath
+*.project
+*.settings
+
