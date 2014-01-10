@@ -85,7 +85,7 @@ public class ExampleUserDetails extends SocialUser {
         private Set<GrantedAuthority> authorities;
 
         public Builder() {
-            this.authorities = new HashSet<>();
+            this.authorities = new HashSet();
         }
 
         public Builder firstName(String firstName) {

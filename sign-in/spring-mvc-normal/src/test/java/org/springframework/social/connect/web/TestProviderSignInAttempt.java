@@ -12,7 +12,7 @@ public class TestProviderSignInAttempt extends ProviderSignInAttempt {
 
     private Connection<?> connection;
 
-    private Set<String> connections = new HashSet<>();
+    private Set<String> connections = new HashSet();
 
     public TestProviderSignInAttempt(Connection<?> connection) {
         super(connection, null, null);
